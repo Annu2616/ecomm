@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balanced Bowls</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS -->
+</head>
+<body>
+
+<header>
+    <!-- Logo and Name Section -->
+    <div class="logo-section">
+        <img src="images/logo2.jpg" alt="Balanced Bowl Logo" class="logo-img"> <!-- Replace with your logo image -->
+        <p class="logo-text">BALANCED BOWLS</p>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="nav-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Login/Signup Section -->
+    <div class="auth-section">
+        <button id="login-btn" onclick="toggleLoginForm()">Login</button>
+        <button id="signup-btn" onclick="toggleSignupForm()">Sign Up</button>
+    </div>
+</header>
+
+<!-- Login Modal -->
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="toggleLoginForm()">&times;</span>
+        <h2>Login</h2>
+        <form action="login.php" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+<!-- Signup Modal -->
+<div id="signup-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="toggleSignupForm()">&times;</span>
+        <h2>Sign Up</h2>
+        <form action="signup.php" method="POST">
+            <label for="new-username">Username</label>
+            <input type="text" id="new-username" name="username" required>
+            <label for="new-email">Email</label>
+            <input type="email" id="new-email" name="email" required>
+            <label for="new-password">Password</label>
+            <input type="password" id="new-password" name="password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+<script src="scripts.js"></script> <!-- Link to your JavaScript -->
+</body>
+<body>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-image">
+            <img src="images/theme images 2 - Copy.webp" alt="Hero Image" class="hero-img">
+        </div>
+        <div class="hero-content">
+            <h1>Welcome to Balanced Bowls</h1>
+            <p>Your Healthy, Fresh, and Delicious Meals Delivered to Your Doorstep</p>
+            <a href="menu.html" class="cta-btn">Explore Menu</a>
+            <a href="about.html" class="cta-btn">Learn More</a>
+        </div>
+    </section>
+    
+    <script src="scripts.js"></script> <!-- Link to your JavaScript file -->
+    </body>
+    <body>
+
+        <!-- Features & Highlights Section -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Why Choose Balanced Bowls?</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <img src="images/dark theme 1.avif" alt="Fresh Ingredients" class="feature-icon">
+                        <h3>Fresh Ingredients</h3>
+                        <p>We use only the freshest ingredients, ensuring that every bite is packed with flavor and nutrients.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="images/menu 9.jpg" alt="Healthy Options" class="feature-icon">
+                        <h3>Healthy Options</h3>
+                        <p>Our bowls are designed to be as nutritious as they are delicious. Healthy eating made easy.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="images/fast delivery.png" alt="Fast Delivery" class="feature-icon">
+                        <h3>Fast Delivery</h3>
+                        <p>Get your favorite meals delivered to your door quickly and fresh, ready to enjoy.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="images/eco.jpg" alt="Eco Friendly" class="feature-icon">
+                        <h3>Eco Friendly</h3>
+                        <p>We prioritize sustainability with eco-friendly packaging and practices, so you can feel good about your choice.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script src="scripts.js"></script> <!-- Link to your JavaScript file -->
+        </body>
+        <body>
+
+            <!-- About Us Section -->
+            <section class="about-us">
+                <div class="container">
+                    <div class="about-content">
+                        <h2 class="section-title">About Us</h2>
+                        <p class="about-description">
+                            At Balanced Bowls, we believe that healthy eating should be both easy and delicious. Our mission is to offer nutritious meals packed with fresh ingredients, so you can feel your best while enjoying amazing food. Whether you're looking for a quick lunch, a wholesome dinner, or a meal that fits your specific dietary needs, we've got you covered.
+                        </p>
+                        <p class="about-description">
+                            We pride ourselves on providing an eco-friendly, sustainable dining experience. From our locally sourced ingredients to our commitment to reducing waste, we’re dedicated to making a positive impact on your health and the planet.
+                        </p>
+                        <a href="menu.html" class="cta-btn">Explore Our Menu</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/menu 9.jpg" alt="Healthy Bowls" class="about-img">
+                    </div>
+                </div>
+            </section>
+            
+            <script src="scripts.js"></script> <!-- Link to your JavaScript file -->
+            </body>
+            <body>
+
+                <!-- Menu Section -->
+                <section class="menu">
+                    <div class="container">
+                        <h2 class="section-title">Our Menu</h2>
+                        <div class="menu-grid">
+                            <!-- Fruit Bowl Item -->
+                            <div class="menu-item">
+                                <img src="images/logo.avif" alt="Fruit Bowl" class="menu-img">
+                                <h3 class="menu-title">Fruit Bowl</h3>
+                                <p class="menu-description">
+                                    A refreshing mix of seasonal fruits, packed with vitamins and minerals for a healthy start to your day.
+                                </p>
+                                <p class="menu-price">₹ 199</p>
+                                <p class="menu-discount">Offer: 10% Off</p>
+                                <div class="quantity-selector">
+                                    <label for="fruit-bowl-quantity">Quantity:</label>
+                                    <select id="fruit-bowl-quantity">
+                                        <option value="100g">100g - ₹199</option>
+                                        <option value="250g">250g - ₹349</option>
+                                    </select>
+                                </div>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                
+                            <!-- Veg Salad Bowl Item -->
+                            <div class="menu-item">
+                                <img src="images/menu 1.jfif" alt="Veg Salad Bowl" class="menu-img">
+                                <h3 class="menu-title">Veg Salad Bowl</h3>
+                                <p class="menu-description">
+                                    A crunchy mix of fresh vegetables with a tangy dressing, packed with fiber and nutrients.
+                                </p>
+                                <p class="menu-price">₹249</p>
+                                <p class="menu-discount">Offer: 15% Off</p>
+                                <div class="quantity-selector">
+                                    <label for="veg-salad-quantity">Quantity:</label>
+                                    <select id="veg-salad-quantity">
+                                        <option value="100g">100g - ₹249</option>
+                                        <option value="250g">250g - ₹399</option>
+                                    </select>
+                                </div>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                
+                            <!-- Paneer Bowl Item -->
+                            <div class="menu-item">
+                                <img src="images/menu 4.jpg" alt="Paneer Bowl" class="menu-img">
+                                <h3 class="menu-title">Paneer Bowl</h3>
+                                <p class="menu-description">
+                                    Soft, marinated paneer chunks with fresh veggies and a tangy dressing, packed with protein.
+                                </p>
+                                <p class="menu-price">₹299</p>
+                                <p class="menu-discount">Offer: 12% Off</p>
+                                <div class="quantity-selector">
+                                    <label for="paneer-bowl-quantity">Quantity:</label>
+                                    <select id="paneer-bowl-quantity">
+                                        <option value="100g">100g - ₹299</option>
+                                        <option value="250g">250g - ₹499</option>
+                                    </select>
+                                </div>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                
+                            <!-- Chicken Bowl Item -->
+                            <div class="menu-item">
+                                <img src="images/menu 5.jpg" alt="Chicken Bowl" class="menu-img">
+                                <h3 class="menu-title">Chicken Bowl</h3>
+                                <p class="menu-description">
+                                    Tender chicken pieces with a blend of spices and healthy greens, perfect for a protein-packed meal.
+                                </p>
+                                <p class="menu-price">₹349</p>
+                                <p class="menu-discount">Offer: 20% Off</p>
+                                <div class="quantity-selector">
+                                    <label for="chicken-bowl-quantity">Quantity:</label>
+                                    <select id="chicken-bowl-quantity">
+                                        <option value="100g">100g - ₹349</option>
+                                        <option value="250g">250g - ₹549</option>
+                                    </select>
+                                </div>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <script src="scripts.js"></script> <!-- Link to your JavaScript file -->
+                </body>
+                <body>
+
+                    <!-- Limited Offer Section -->
+                    <section class="limited-offer">
+                        <div class="container">
+                            <h2 class="section-title">Limited Time Offer</h2>
+                            <div class="offer-container">
+                                <div class="offer-item">
+                                    <img src="images/logo.avif" alt="Fruit Bowl" class="offer-img">
+                                    <h3 class="offer-title">Fruit Bowl</h3>
+                                    <p class="offer-description">
+                                        Enjoy a refreshing fruit bowl packed with seasonal fruits. Healthy, fresh, and delicious! Get 15% off now.
+                                    </p>
+                                    <p class="offer-price"><span class="old-price">₹199</span> ₹169</p>
+                                    <a href="menu.html" class="cta-btn">Order Now</a>
+                                </div>
+                                <div class="offer-item">
+                                    <img src="images/menu 1.jfif" alt="Veg Salad Bowl" class="offer-img">
+                                    <h3 class="offer-title">Veg Salad Bowl</h3>
+                                    <p class="offer-description">
+                                        A crunchy mix of fresh veggies with a tangy dressing. Now available at a 20% discount.
+                                    </p>
+                                    <p class="offer-price"><span class="old-price">₹249</span> ₹199</p>
+                                    <a href="menu.html" class="cta-btn">Order Now</a>
+                                </div>
+                                <div class="offer-item">
+                                    <img src="images/menu 4.jpg" alt="Paneer Bowl" class="offer-img">
+                                    <h3 class="offer-title">Paneer Bowl</h3>
+                                    <p class="offer-description">
+                                        Soft marinated paneer with fresh veggies, full of protein. Get 10% off on your order today!
+                                    </p>
+                                    <p class="offer-price"><span class="old-price">₹299</span> ₹269</p>
+                                    <a href="menu.html" class="cta-btn">Order Now</a>
+                                </div>
+                                <div class="offer-item">
+                                    <img src="images/menu 5.jpg" alt="Chicken Bowl" class="offer-img">
+                                    <h3 class="offer-title">Chicken Bowl</h3>
+                                    <p class="offer-description">
+                                        Tender chicken with a blend of spices and healthy greens. 25% off for a limited time!
+                                    </p>
+                                    <p class="offer-price"><span class="old-price">₹349</span> ₹259</p>
+                                    <a href="menu.html" class="cta-btn">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <script src="scripts.js"></script> <!-- Link to your JavaScript file -->
+                    </body>
+                    <body>
+
+                        <!-- Location Section -->
+                        <section class="location">
+                            <div class="container">
+                                <h2 class="section-title">Our Location</h2>
+                                <p class="location-description">
+                                    We are located at Noida Sector 6, B-Block 55, right at the heart of the city. Visit us for a fresh and healthy meal to energize your day!
+                                </p>
+                                <div class="location-map">
+                                    <!-- Google Map Embed -->
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3512.875124060847!2d77.3300173151404!3d28.584654482475616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1c32022070d7%3A0x9eecb77e5641230!2sSector%206%2C%20Noida%2C%20Uttar%20Pradesh%20201201!5e0!3m2!1sen!2sin!4v1632410733743!5m2!1sen!2sin" 
+                                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <script src="scripts.js"></script> <!-- Link to your JavaScript file -->
+                        </body>
+                        
+
+<!-- Payment Gateway Section -->
+<section class="payment-section">
+    <div class="container">
+        <h2 class="section-title">Secure Payment</h2>
+        
+        <!-- Payment Form -->
+        <form id="payment-form" class="payment-form">
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" placeholder="Enter your card number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" id="expiry-date" placeholder="MM/YY" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="password" id="cvv" placeholder="Enter CVV" required>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="text" id="amount" value="₹" disabled>
+            </div>
+
+            <!-- Payment Button -->
+            <button type="button" id="submit-payment" class="pay-btn">Pay Now</button>
+        </form>
+
+        <!-- Status Message -->
+        <div id="payment-status" class="status-message"></div>
+    </div>
+</section>
+
+<script src="scripts.js"></script>
+</body>
+<body>
+
+    <!-- Customer and Review Section -->
+    <section class="review-section">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            
+            <!-- Review List -->
+            <div class="review-list">
+                <!-- Review 1 -->
+                <div class="review">
+                    <div class="review-header">
+                        <img src="https://via.placeholder.com/50" alt="Customer 1" class="customer-avatar">
+                        <div class="reviewer-info">
+                            <h3>Jasmine</h3>
+                            <div class="rating">★★★★☆</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"The food was delicious! I loved the healthy options available. Highly recommend!"</p>
+                </div>
+    
+                <!-- Review 2 -->
+                <div class="review">
+                    <div class="review-header">
+                        <img src="https://via.placeholder.com/50" alt="Customer 2" class="customer-avatar">
+                        <div class="reviewer-info">
+                            <h3>radhivk</h3>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Amazing taste and great portion sizes! The fruit bowl is my favorite."</p>
+                </div>
+    
+                <!-- Review 3 -->
+                <div class="review">
+                    <div class="review-header">
+                        <img src="https://via.placeholder.com/50" alt="Customer 3" class="customer-avatar">
+                        <div class="reviewer-info">
+                            <h3>Meera</h3>
+                            <div class="rating">★★★☆☆</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Good food, but delivery took longer than expected. Will try again though!"</p>
+                </div>
+            </div>
+    
+            <!-- Add Review Form -->
+            <h3 class="form-title">Add Your Review</h3>
+            <form id="review-form" class="review-form">
+                <div class="form-group">
+                    <label for="review-name">Your Name</label>
+                    <input type="text" id="review-name" placeholder="Enter your name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="review-rating">Rating</label>
+                    <select id="review-rating" required>
+                        <option value="5">★★★★★</option>
+                        <option value="4">★★★★☆</option>
+                        <option value="3">★★★☆☆</option>
+                        <option value="2">★★☆☆☆</option>
+                        <option value="1">★☆☆☆☆</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="review-text">Your Review</label>
+                    <textarea id="review-text" placeholder="Write your review here..." required></textarea>
+                </div>
+    
+                <button type="submit" id="submit-review" class="submit-btn">Submit Review</button>
+            </form>
+    
+            <!-- Status Message -->
+            <div id="review-status" class="status-message"></div>
+        </div>
+    </section>
+    
+    <script src="scripts.js"></script>
+    </body>
+    
+        <body>
+
+<!-- Social Proof and Engagement Section -->
+<section class="social-proof">
+    <div class="container">
+        <!-- Title -->
+        <h2 class="section-title">What Our Customers Say</h2>
+        
+        <!-- Customer Testimonials -->
+        <div class="testimonials">
+            <!-- Testimonial 1 -->
+            <div class="testimonial">
+                <div class="testimonial-avatar">
+                    <img src="https://via.placeholder.com/50" alt="Customer 1">
+                </div>
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"Balanced Bowls offers the best healthy bowls I have ever tasted! Totally recommended."</p>
+                    <p class="testimonial-name">- Sarah L.</p>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial">
+                <div class="testimonial-avatar">
+                    <img src="https://via.placeholder.com/50" alt="Customer 2">
+                </div>
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"Absolutely loved the chicken bowl! Fresh, healthy, and delicious. 10/10!"</p>
+                    <p class="testimonial-name">- Mike D.</p>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial">
+                <div class="testimonial-avatar">
+                    <img src="https://via.placeholder.com/50" alt="Customer 3">
+                </div>
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"Quick delivery, great customer service, and tasty meals. Highly satisfied!"</p>
+                    <p class="testimonial-name">- Priya S.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Engagement -->
+        <div class="social-media-engagement">
+            <h3>Join Us on Social Media</h3>
+            <div class="social-buttons">
+                <a href="https://facebook.com" target="_blank" class="social-button facebook">Facebook</a>
+                <a href="https://twitter.com" target="_blank" class="social-button twitter">Twitter</a>
+                <a href="https://instagram.com" target="_blank" class="social-button instagram">Instagram</a>
+                <a href="https://linkedin.com" target="_blank" class="social-button linkedin">LinkedIn</a>
+            </div>
+        </div>
+
+        <!-- Followers and Reviews Count -->
+        <div class="social-proof-stats">
+            <div class="followers">
+                <h4>Our Followers</h4>
+                <p class="followers-count">Followers: <strong>25,000+</strong></p>
+            </div>
+            <div class="reviews">
+                <h4>Customer Reviews</h4>
+                <p class="reviews-count">Reviews: <strong>1,200+</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="scripts.js"></script>
+</body>
+<body>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Our Address</h3>
+                    <p>Noida Sector 6, B-Block 55</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>support@balancedbowls.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <p>+91 98765 43210</p>
+                </div>
+            </div>
+    
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Get In Touch</h3>
+                <form id="contact-form" class="form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" placeholder="Enter your message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div id="status-message" class="status-message"></div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="scripts.js"></script>
+    </body>
+    <body>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <!-- About Section -->
+                    <div class="footer-item about">
+                        <h3>About Balanced Bowls</h3>
+                        <p>Balanced Bowls offers a variety of healthy meal options that are delicious, fresh, and nutritious. We bring you the perfect balance of taste and wellness.</p>
+                    </div>
+        
+                    <!-- Links Section -->
+                    <div class="footer-item links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Offers</a></li>
+                            <li><a href="#">Location</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Social Media Section -->
+                    <div class="footer-item social">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="https://facebook.com" target="_blank" class="social-icon facebook">Facebook</a>
+                            <a href="https://twitter.com" target="_blank" class="social-icon twitter">Twitter</a>
+                            <a href="https://instagram.com" target="_blank" class="social-icon instagram">Instagram</a>
+                            <a href="https://linkedin.com" target="_blank" class="social-icon linkedin">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Footer Bottom Section -->
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Balanced Bowls | All Rights Reserved</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="scripts.js"></script>
+        </body>    
+        <body>
+
+            <!-- Footer Section -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <!-- About Section -->
+                        <div class="footer-item about">
+                            <h3>About Balanced Bowls</h3>
+                            <p>Balanced Bowls offers a variety of healthy meal options that are delicious, fresh, and nutritious. We bring you the perfect balance of taste and wellness.</p>
+                        </div>
+            
+                        <!-- Links Section -->
+                        <div class="footer-item links">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Menu</a></li>
+                                <li><a href="#">Offers</a></li>
+                                <li><a href="#">Location</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+            
+                        <!-- Social Media Section -->
+                        <div class="footer-item social">
+                            <h3>Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="https://facebook.com" target="_blank" class="social-icon facebook">Facebook</a>
+                                <a href="https://twitter.com" target="_blank" class="social-icon twitter">Twitter</a>
+                                <a href="https://instagram.com" target="_blank" class="social-icon instagram">Instagram</a>
+                                <a href="https://linkedin.com" target="_blank" class="social-icon linkedin">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Footer Bottom Section -->
+                    <div class="footer-bottom">
+                        <p>&copy; 2024 Balanced Bowls | All Rights Reserved</p>
+                        <div class="footer-bottom-links">
+                            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+            <script src="scripts.js"></script>
+            </body>
+            <body>
+
+                <!-- Footer Section -->
+                <footer class="footer">
+                    <div class="container">
+                        <div class="footer-content">
+                            <!-- About Section -->
+                            <div class="footer-item about">
+                                <h3>About Balanced Bowls</h3>
+                                <p>Balanced Bowls offers a variety of healthy meal options that are delicious, fresh, and nutritious. We bring you the perfect balance of taste and wellness.</p>
+                            </div>
+                
+                            <!-- Links Section -->
+                            <div class="footer-item links">
+                                <h3>Quick Links</h3>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Menu</a></li>
+                                    <li><a href="#">Offers</a></li>
+                                    <li><a href="#">Location</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                
+                            <!-- Social Media Section -->
+                            <div class="footer-item social">
+                                <h3>Follow Us</h3>
+                                <div class="social-icons">
+                                    <a href="https://facebook.com" target="_blank" class="social-icon facebook">Facebook</a>
+                                    <a href="https://twitter.com" target="_blank" class="social-icon twitter">Twitter</a>
+                                    <a href="https://instagram.com" target="_blank" class="social-icon instagram">Instagram</a>
+                                    <a href="https://linkedin.com" target="_blank" class="social-icon linkedin">LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Footer Bottom Section -->
+                        <div class="footer-bottom">
+                            <p>&copy; 2024 Balanced Bowls | All Rights Reserved</p>
+                            <div class="footer-bottom-links">
+                                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                
+                <script src="scripts.js"></script>
+                </body>
+                <body>
+
+                    <!-- Footer Section -->
+                    <footer class="footer">
+                        <div class="container">
+                            <div class="footer-content">
+                                <!-- About Section -->
+                                <div class="footer-item about">
+                                    <h3>About Balanced Bowls</h3>
+                                    <p>Balanced Bowls offers a variety of healthy meal options that are delicious, fresh, and nutritious. We bring you the perfect balance of taste and wellness.</p>
+                                </div>
+                    
+                                <!-- Links Section -->
+                                <div class="footer-item links">
+                                    <h3>Quick Links</h3>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Menu</a></li>
+                                        <li><a href="#">Offers</a></li>
+                                        <li><a href="#">Location</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                    
+                                <!-- Social Media Section -->
+                                <div class="footer-item social">
+                                    <h3>Follow Us</h3>
+                                    <div class="social-icons">
+                                        <a href="https://facebook.com" target="_blank" class="social-icon facebook">Facebook</a>
+                                        <a href="https://twitter.com" target="_blank" class="social-icon twitter">Twitter</a>
+                                        <a href="https://instagram.com" target="_blank" class="social-icon instagram">Instagram</a>
+                                        <a href="https://linkedin.com" target="_blank" class="social-icon linkedin">LinkedIn</a>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Footer Bottom Section -->
+                            <div class="footer-bottom">
+                                <p>&copy; 2024 Balanced Bowls | All Rights Reserved</p>
+                                <div class="footer-bottom-links">
+                                    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    
+                    <script src="scripts.js"></script>
+                    </body>
+                    <body>
+
+                        <!-- Footer Section -->
+                        <footer class="footer">
+                            <div class="container">
+                                <div class="footer-content">
+                                    <!-- About Section -->
+                                    <div class="footer-item about">
+                                        <h3>About Balanced Bowls</h3>
+                                        <p>Balanced Bowls offers a variety of healthy meal options that are delicious, fresh, and nutritious. We bring you the perfect balance of taste and wellness.</p>
+                                    </div>
+                        
+                                    <!-- Links Section -->
+                                    <div class="footer-item links">
+                                        <h3>Quick Links</h3>
+                                        <ul>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Menu</a></li>
+                                            <li><a href="#">Offers</a></li>
+                                            <li><a href="#">Location</a></li>
+                                            <li><a href="#">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                        
+                                    <!-- Social Media Section -->
+                                    <div class="footer-item social">
+                                        <h3>Follow Us</h3>
+                                        <div class="social-icons">
+                                            <a href="https://facebook.com" target="_blank" class="social-icon facebook">Facebook</a>
+                                            <a href="https://twitter.com" target="_blank" class="social-icon twitter">Twitter</a>
+                                            <a href="https://instagram.com" target="_blank" class="social-icon instagram">Instagram</a>
+                                            <a href="https://linkedin.com" target="_blank" class="social-icon linkedin">LinkedIn</a>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Footer Bottom Section -->
+                                <div class="footer-bottom">
+                                    <p>&copy; 2024 Balanced Bowls | All Rights Reserved</p>
+                                    <div class="footer-bottom-links">
+                                        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+                        
+                        <script src="scripts.js"></script>
+                        </body>
+                        <body>
+
+                            <!-- Footer Section -->
+                            <footer class="footer">
+                                <div class="container">
+                                    <div class="footer-content">
+                                        <!-- About Section -->
+                                        <div class="footer-item about">
+                                            <h3>About Balanced Bowls</h3>
+                                            <p>Balanced Bowls offers a variety of healthy meal options that are delicious, fresh, and nutritious. We bring you the perfect balance of taste and wellness.</p>
+                                        </div>
+                            
+                                        <!-- Links Section -->
+                                        <div class="footer-item links">
+                                            <h3>Quick Links</h3>
+                                            <ul>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Menu</a></li>
+                                                <li><a href="#">Offers</a></li>
+                                                <li><a href="#">Location</a></li>
+                                                <li><a href="#">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                            
+                                        <!-- Social Media Section -->
+                                        <div class="footer-item social">
+                                            <h3>Follow Us</h3>
+                                            <div class="social-icons">
+                                                <a href="https://facebook.com" target="_blank" class="social-icon facebook">Facebook</a>
+                                                <a href="https://twitter.com" target="_blank" class="social-icon twitter">Twitter</a>
+                                                <a href="https://instagram.com" target="_blank" class="social-icon instagram">Instagram</a>
+                                                <a href="https://linkedin.com" target="_blank" class="social-icon linkedin">LinkedIn</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Footer Bottom Section -->
+                                    <div class="footer-bottom">
+                                        <p>&copy; 2024 Balanced Bowls | All Rights Reserved</p>
+                                        <div class="footer-bottom-links">
+                                            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </footer>
+                            
+                            <script src="scripts.js"></script>
+                            </body>
+                            <body>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- About Section -->
+            <div class="footer-item about">
+                <h3>About Balanced Bowls</h3>
+                <p>Balanced Bowls offers a variety of healthy meal options that are delicious, fresh, and nutritious. We bring you the perfect balance of taste and wellness.</p>
+            </div>
+
+            <!-- Links Section -->
+            <div class="footer-item links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="footer-item social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" class="social-icon facebook">Facebook</a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon twitter">Twitter</a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon instagram">Instagram</a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon linkedin">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Balanced Bowls | All Rights Reserved</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="scripts.js"></script>
+</body>                    
+                
+</html>
